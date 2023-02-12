@@ -17,6 +17,9 @@
       "inputs": ["test/**/*.t.sol"],
       "outputs": []
     },
+    "test:watch": {
+      "cache": false
+    },
     "lint": {
       "outputs": []
     },
