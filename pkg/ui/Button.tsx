@@ -1,4 +1,3 @@
-import * as React from "react";
-export const Button = () => {
+export default function Button() {
   return <button>Boop</button>;
-};
+}
