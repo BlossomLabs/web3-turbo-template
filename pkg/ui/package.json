@@ -36,12 +36,16 @@
     "@vitejs/plugin-react-swc": "^3.0.0",
     "@vitest/coverage-c8": "^0.28.4",
     "eslint": "^7.32.0",
-    "eslint-config-custom": "workspace:*",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-config-turbo": "^0.0.8",
+    "eslint-plugin-testing-library": "^5.10.2",
     "jsdom": "^21.1.0",
     "tsconfig": "workspace:*",
     "typescript": "^4.5.2",
     "vite": "^4.1.0",
     "vite-plugin-dts": "^2.0.2",
+    "vite-plugin-eslint": "^1.8.1",
     "vitest": "^0.28.4"
   }
 }
