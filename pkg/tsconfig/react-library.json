@@ -4,8 +4,10 @@
   "extends": "./base.json",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "lib": ["ES2015"],
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
-    "target": "es6"
+    "target": "es6",
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true
   }
 }

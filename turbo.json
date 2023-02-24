@@ -24,7 +24,8 @@
       "outputs": []
     },
     "dev": {
-      "cache": false
+      "cache": false,
+      "dependsOn": ["ui#build"]
     },
     "subgraph#build": {
       "dependsOn": ["foundry#build"]
