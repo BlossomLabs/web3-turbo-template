@@ -4,5 +4,5 @@ import Button from "../components/Button";
 
 test("Button", () => {
   render(<Button />);
-  expect(screen.getByRole("button")).toBeInTheDocument();
+  expect(screen.getByRole("button")).toBeDefined();
 });
