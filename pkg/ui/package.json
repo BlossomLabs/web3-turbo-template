@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "type": "module",
   "license": "MIT",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/ui.umd.cjs",
   "module": "./dist/ui.js",
   "exports": {
@@ -31,14 +33,15 @@
     "@testing-library/user-event": "^14.4.3",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
-    "@vitest/coverage-c8": "^0.28.4",
     "@vitejs/plugin-react-swc": "^3.0.0",
+    "@vitest/coverage-c8": "^0.28.4",
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
     "jsdom": "^21.1.0",
     "tsconfig": "workspace:*",
     "typescript": "^4.5.2",
     "vite": "^4.1.0",
+    "vite-plugin-dts": "^2.0.2",
     "vitest": "^0.28.4"
   }
 }
