@@ -4,13 +4,14 @@ import type { AppProps } from "next/app";
 import NextHead from "next/head";
 import * as React from "react";
 import { WagmiConfig } from "wagmi";
-
 import { chains, wagmiConfig } from "../wagmi";
+import { ChakraProvider, ChakraProviderProps } from "@chakra-ui/react"
 
 function App({ Component, pageProps }: AppProps) {
   const [mounted, setMounted] = React.useState(false);
   React.useEffect(() => setMounted(true), []);
   return (
+    <ChakraProvider {...({} as ChakraProviderProps)}>
     <WagmiConfig config={wagmiConfig}>
       <RainbowKitProvider chains={chains}>
         <NextHead>
@@ -20,6 +21,7 @@ function App({ Component, pageProps }: AppProps) {
         {mounted && <Component {...pageProps} />}
       </RainbowKitProvider>
     </WagmiConfig>
+    </ChakraProvider>
   );
 }
 
