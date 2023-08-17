@@ -1,9 +1,8 @@
 import '@rainbow-me/rainbowkit/styles.css';
 import {
   getDefaultWallets,
-  RainbowKitProvider,
 } from '@rainbow-me/rainbowkit';
-import { configureChains, createConfig, WagmiConfig } from 'wagmi';
+import { configureChains, createConfig } from 'wagmi';
 import {
   mainnet,
   polygon,
@@ -16,8 +15,10 @@ import { publicProvider } from 'wagmi/providers/public';
 
 export const { chains, publicClient } = configureChains(
   [mainnet, polygon, optimism, arbitrum, zora],
-  [
+  process.env.ALCHEMY_ID ? [
     alchemyProvider({ apiKey: process.env.ALCHEMY_ID }),
+    publicProvider()
+  ] : [
     publicProvider()
   ]
 );
